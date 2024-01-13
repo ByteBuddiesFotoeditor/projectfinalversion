@@ -296,12 +296,5 @@ public class fotoEditorGUI extends JFrame {
         }
     }
 
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            fotoEditorGUI editor = new fotoEditorGUI();
-            editor.setExtendedState(JFrame.MAXIMIZED_BOTH);
-            editor.setVisible(true);
-           
-        });
-    }
+
 }
