@@ -18,17 +18,18 @@ public class DrawFilter implements Filter{
 
     @Override
     public BufferedImage applyFilter(BufferedImage input) {
-    BufferedImage result = new BufferedImage(input.getWidth(), input.getHeight(), BufferedImage.TYPE_INT_ARGB);
-    Graphics2D g2d = result.createGraphics();
+        BufferedImage result = new BufferedImage(input.getWidth(), input.getHeight(), BufferedImage.TYPE_INT_ARGB);
+        Graphics2D g2d = result.createGraphics();
 
-    // Copy the original image to the result image
-    g2d.drawImage(input, 0, 0, null);
+        // Copy the original image to the result image
+        g2d.drawImage(input, 0, 0, null);
 
-    // Draw the path on the result image
-    g2d.setColor(Color.BLACK);
-    g2d.setStroke(new BasicStroke(5, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
-    g2d.draw(path);
-    g2d.dispose();
+        // Draw the path on the result image
+        g2d.setColor(Color.BLACK);
+        g2d.setStroke(new BasicStroke(5, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
+        g2d.draw(path);
+        g2d.dispose();
+        
     return result;
 }
 

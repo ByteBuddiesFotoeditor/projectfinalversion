@@ -41,6 +41,6 @@ public class heavyblur implements Filter {
 			}
 		}
 		return blurImg;
-         }
+        }
 
 }

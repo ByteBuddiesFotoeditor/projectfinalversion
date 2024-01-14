@@ -14,7 +14,7 @@ public class colorinImage implements Filter{
             for (int x = 0; x < width; x++) {
                 int rgb = image.getRGB(x, y);
                 int red = (rgb >> 16) & 0xFF;
-                int green = ((rgb >> 8) & 0xFF) + 30 ;
+                int green = ((rgb >> 8) & 0xFF) + 30;
                 int blue = rgb & 0xFF;
 
                 int invertred = 255-red;

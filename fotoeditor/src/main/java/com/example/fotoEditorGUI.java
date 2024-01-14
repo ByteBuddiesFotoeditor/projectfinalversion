@@ -296,5 +296,4 @@ public class fotoEditorGUI extends JFrame {
         }
     }
 
-
 }
